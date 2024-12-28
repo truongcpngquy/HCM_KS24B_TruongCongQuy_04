@@ -35,6 +35,7 @@ int main(){
 					printf("phan tu thu[%d]: %d,",i,arr[i]);
 				}
                 break;
+                case 3;
             case 4:
             min=arr[0];
             max=arr[0];
@@ -88,13 +89,19 @@ int main(){
                     array[i] = array[i+1];
                 }
                 size--;
-                printf("Xoa thanh cong\n1"
-                       "");
+                printf("Xoa thanh cong\n");
                 break;
+                case 7:
+                	for(int i=0; i<n;i++){
+					int max=arr[i];
+					for(int j=i+1;j<n;j++){
+						if(max<arr[j]){
+							arr[i]=arr[j];
+							arr[j]=max;
+							max=arr[i];
             }
         }
-    if(tong - n == n){
-        }
-    }
+   
+        
     return 0;
 }
